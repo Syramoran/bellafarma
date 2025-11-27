@@ -1,5 +1,6 @@
 import React from 'react';
 import { ModalType } from '../types';
+import { Link } from 'react-router-dom';
 
 interface FooterProps {
   openModal: (type: ModalType) => void;
@@ -34,7 +35,7 @@ const Footer: React.FC<FooterProps> = ({ openModal }) => {
 
           {/* Legal */}
           <div>
-            <h4 className="font-bold text-lg mb-4 text-white">Legales</h4>
+            <h4 className="font-bold text-lg mb-4 text-white"><Link to="/politica-de-privacidad">Legales</Link></h4>
             <ul className="space-y-2 text-gray-300 text-sm">
                 <li>
                     <button onClick={() => openModal('privacy')} className="hover:text-bellafarma-green transition-colors text-left">
