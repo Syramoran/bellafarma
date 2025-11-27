@@ -19,21 +19,38 @@ const ContactSection: React.FC = () => {
     e.preventDefault();
     setStatus('submitting');
 
-    // Simulate API call
-    setTimeout(() => {
-      // TRACK LEAD EVENT FOR META ADS
-      if (typeof window !== 'undefined' && window.fbq) {
-        window.fbq('track', 'Lead', {
-          content_name: 'Formulario de Contacto',
-          value: 0.00,
-          currency: 'ARS'
-        });
-        console.log('[Meta Pixel] Lead event tracked');
-      }
+    // 1. Construir el mensaje predefinido para WhatsApp
+    const whatsappMessage = 
+      `¡Hola, Bellafarma! Tengo una consulta o pedido desde la web.\n\n` +
+      `👤 Nombre: ${formData.name}\n` +
+      `📧 Email: ${formData.email}\n` +
+      `📞 Teléfono: ${formData.phone || 'No especificado'}\n` +
+      `💬 Mensaje: ${formData.message}\n\n`;
 
-      setStatus('success');
-      setFormData({ name: '', email: '', phone: '', message: '' });
-    }, 1500);
+    // Codificar el mensaje para la URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+
+    // 2. Crear la URL de WhatsApp
+    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+    // 3. Abrir la ventana de WhatsApp (o la aplicación)
+    window.open(whatsappURL, '_blank');
+
+    // 4. Trackear el evento 'Lead' para Meta Ads
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Lead', {
+        content_name: 'Formulario WhatsApp',
+        value: 0.00,
+        currency: 'ARS'
+      });
+      console.log('[Meta Pixel] Lead event tracked via WhatsApp link');
+    }
+
+    // 5. Mostrar estado de éxito y resetear formulario (después de abrir el link)
+    setTimeout(() => {
+        setStatus('success');
+        setFormData({ name: '', email: '', phone: '', message: '' });
+    }, 500); // Pequeño delay para registrar el evento y dar feedback al usuario
   };
 
   return (
