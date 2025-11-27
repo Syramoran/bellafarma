@@ -35,7 +35,7 @@ const LegalModal: React.FC<LegalModalProps> = ({ isOpen, type, onClose }) => {
         
         Responsable Legal: Farmacia Bellafarma S.R.L.
         Dirección: Buenos Aires 156, Crespo, Entre Ríos.
-        Director Técnico: Farmacéutico Juan Pérez (Matrícula N° 1234).
+        Director Técnico: Farmacéutico Jorge Ponce (Matrícula N° 736).
         
         El contenido de este sitio web es solo para fines informativos y no sustituye el consejo médico profesional. Consulte siempre a un profesional de la salud antes de comenzar cualquier tratamiento.
       `
