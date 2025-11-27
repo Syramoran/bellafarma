@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/../assets/hero-img-AI.JPG" 
+          src="/assets/hero-img-AI.jpg" 
           alt="Interior de Farmacia Bellafarma" 
           className="w-full h-full object-cover opacity-40 md:opacity-100"
         />
