@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, ShoppingCart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,11 +19,13 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center gap-2 h-full">
+            <Link to="/" className="h-full w-auto">
             <img 
               src="/../assets/logo-horizontal.png" 
               alt="BellaFarma Logo" 
               className="h-full w-auto" 
             />
+            </Link>
           </div>
 
           {/* Desktop Nav */}

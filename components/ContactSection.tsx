@@ -61,7 +61,7 @@ const ContactSection: React.FC = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <span className="text-bellafarma-green font-semibold tracking-wider uppercase text-sm">Ubicación & Contacto</span>
+              <span className="text-bellafarma-green font-semibold tracking-wider uppercase text-sm">Ubicación y contacto</span>
               <h2 className="text-3xl md:text-4xl font-bold text-bellafarma-blue mt-2 mb-4">Estamos para ayudarte</h2>
               <p className="text-bellafarma-gray text-lg">
                 Visitanos en nuestro local o escribinos para realizar tus pedidos y consultas.

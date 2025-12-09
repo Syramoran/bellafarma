@@ -4,28 +4,28 @@ import { Product } from '../types';
 const products: Product[] = [
   {
     id: 1,
-    name: 'Protector Solar FPS 50+',
+    name: 'Protectores solares',
     category: 'Dermocosmética',
     price: '$12.500',
     imageUrl: '/../assets/solares.jpg',
   },
   {
     id: 2,
-    name: 'Crema Hidratante Facial',
-    category: 'Cuidado Facial',
+    name: 'Cremas hidratantes',
+    category: 'Cuidado facial',
     price: '$20.200',
     imageUrl: '/../assets/cremas.jpg',
   },
   {
     id: 3,
-    name: 'Perfumes Importados',
+    name: 'Perfumes árabes',
     category: 'Fragancias',
     price: '$60.400',
     imageUrl: '/../assets/perfume.jpg',
   },
   {
     id: 4,
-    name: 'Kit Bebé Recién Nacido',
+    name: 'Canasta del bebé',
     category: 'Maternidad',
     price: '$35.900',
     imageUrl: '/../assets/panales.jpg',
@@ -36,10 +36,10 @@ const ProductGrid: React.FC = () => {
   return (
     <section id="products" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-gray-100 pb-4">
+        <div className="flex flex-col md:flex-row justify-between mb-12 border-b border-gray-100 pb-4">
           <div>
             <span className="text-bellafarma-green font-semibold tracking-wider uppercase text-sm">Destacados</span>
-            <h2 className="text-3xl font-bold text-bellafarma-blue mt-2">Productos y ofertas</h2>
+            <h2 className="text-3xl font-bold text-bellafarma-blue mt-2">Los más pedidos</h2>
           </div>
           {/* <a href="#" className="text-bellafarma-gray hover:text-bellafarma-green font-medium mt-4 md:mt-0">
             Ver todo el catálogo &rarr;

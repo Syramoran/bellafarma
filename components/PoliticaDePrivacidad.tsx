@@ -16,7 +16,7 @@ const PRIVACY_CONTENT = {
     
     1.4. Protección de Datos: Implementamos medidas de seguridad para proteger sus datos contra el acceso no autorizado.
     
-    Si tiene alguna pregunta, contáctenos en contacto@bellafarma.com.ar.
+    Si tiene alguna pregunta, contáctenos en bellafarmafarmacia@hotmail.com.
   `
 };
 
@@ -45,7 +45,7 @@ const PoliticaDePrivacidad = () => {
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       <header className="mb-10 text-center">
         <h1 className="text-4xl font-extrabold text-gray-900 border-b-4 border-bellafarma-blue inline-block pb-2">
-          Documentos Legales
+          Legales
         </h1>
       </header>
       

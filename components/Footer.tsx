@@ -24,7 +24,7 @@ const Footer: React.FC<FooterProps> = ({ openModal }) => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-lg mb-4 text-white">Enlaces Rápidos</h4>
+
             <ul className="space-y-2 text-gray-300 text-sm">
                 <li><a href="#hero" className="hover:text-bellafarma-green transition-colors">Inicio</a></li>
                 <li><a href="#promos" className="hover:text-bellafarma-green transition-colors">Promociones</a></li>
