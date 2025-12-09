@@ -15,7 +15,7 @@ const Partners: React.FC = () => {
           Obras sociales y mutuales 
         </h2>
         
-        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-4  gap-2 md:gap-8 items-center justify-items-center opacity-70">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4  gap-2 md:gap-8 items-center justify-items-center opacity-70">
           {logos.map((logo) => (
             <div key={logo.id} className="w-full h-16 md:h-20 bg-white rounded-lg shadow-sm flex items-center justify-center p-2 grayscale hover:grayscale-0 transition-all duration-300">
                {/* In a real app, use real logos here */}
